@@ -21,14 +21,11 @@ end
 
 def get_japanese_emoticon(ymlpath, emoticon)
   list = load_library(ymlpath)
-  japanese_emoticon 
-  if list["get_emoticon"][emoticon]
-    jpn_emoticon = list["get_emoticon"][emoticon]
-    #binding.pry 
-    jpn_emoticon 
-  else 
-   return "Sorry, that emoticon was not found"
- end 
+  japanese_emoticon = list["get_emoticon"][emoticon]
+  if !japanese_emoticon
+    return "Sorry, that emoticon was not found"
+  end
+  japanese_emoticon
 end
 
 def get_english_meaning(ymlpath, emoticon)
