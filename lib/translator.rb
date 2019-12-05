@@ -21,6 +21,7 @@ end
 
 def get_japanese_emoticon(ymlpath, emoticon)
   list = load_library(ymlpath)
+  japanese_emoticon 
   if list["get_emoticon"][emoticon]
     jpn_emoticon = list["get_emoticon"][emoticon]
     #binding.pry 
