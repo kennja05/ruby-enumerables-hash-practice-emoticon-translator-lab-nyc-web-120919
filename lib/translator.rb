@@ -33,5 +33,6 @@ end
 def get_english_meaning(ymlpath, emoticon)
   list = load_library(ymlpath)
   meaning = list["get_meaning"][emoticon]
-  binding.pry
+  #binding.pry
+  meaning 
 end
