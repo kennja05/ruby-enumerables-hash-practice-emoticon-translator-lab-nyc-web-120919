@@ -34,5 +34,8 @@ def get_english_meaning(ymlpath, emoticon)
   list = load_library(ymlpath)
   meaning = list["get_meaning"][emoticon]
   #binding.pry
+  if !meaning
+    return "Sorry, that emoticon was not found"
+  end   
   meaning 
 end
